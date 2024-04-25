@@ -65,7 +65,7 @@ test("bullets collide", () => {
         timePassed += 16;
     } while (timePassed < timeToCollide);
 
-    expect(game.bullets.length).toBe(0);
+    expect(game.b1.length + game.b2.length).toBe(0);
 });
 
 test("game play", () => {
