@@ -113,8 +113,8 @@ async function playGame(p1: WS, p2: WS) {
             }
         }
 
-        s1.messages = [];
-        s2.messages = [];
+        s1.messages.length = 0;
+        s2.messages.length = 0;
 
         if (game.ended || s1.close || s2.close || s1.error || s2.error) {
             finish();
@@ -170,6 +170,7 @@ async function playGame(p1: WS, p2: WS) {
         getWriter().count("games-played");
         wsToState.delete(p1);
         wsToState.delete(p2);
+        game.reclaim();
     }
 }
 
