@@ -65,8 +65,9 @@ test("bullets collide", () => {
         timePassed += 16;
     } while (timePassed < timeToCollide);
 
+
     expect(game.b1.length + game.b2.length).toBe(0);
-});
+
 
 test("game play", () => {
     const distance = 1000;
