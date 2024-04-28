@@ -1,8 +1,13 @@
-[![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
+takeaways home:
+- getting off promises or as few as possible 
+- defer the network on the server
+- everytime you do {} there is a heavy cost to it (spread operations)
+- arrays behave better for larger amout of data then sets on the other hand sets are much better for handling smaller amount of data
+- pool items
 
-This is a companion repo for the [Blazingly Fast JavaScript][course] course on [Frontend Masters][fem].
-
-
-[fem]: https://frontendmasters.com
-[course]: https://frontendmasters.com/courses/blazingly-fast-js/
-[site]: https://theprimeagen.github.io/fem-jsperf
+sets of tools: 
+- performance and memory tabs are great
+- node's async stuff is slow (for now)
+- memory is a good indication to where problems could be
+- GC time is a good indicator of issues
+- Sets are not always fast
